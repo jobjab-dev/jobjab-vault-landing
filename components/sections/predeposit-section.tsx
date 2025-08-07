@@ -214,7 +214,7 @@ export function PreDepositSection() {
                     </span>
                   </div>
                   <p className="text-xs text-blue-700 dark:text-blue-300">
-                    Official launch expected in Q1 2024. Predepositors will be notified via email when the platform goes live.
+                    Official launch expected in Q3 2025. Predepositors will be notified via email when the platform goes live.
                   </p>
                 </div>
               </CardContent>
