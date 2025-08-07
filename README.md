@@ -75,30 +75,44 @@ No environment variables required - completely static.
 
 ## 📁 Structure
 
-\`\`\`
+```
 jobjab_vault_landing/
 ├── app/
 │   ├── globals.css
 │   ├── layout.tsx
 │   ├── page.tsx
-│   ├── privacy/         # Privacy policy page
-│   └── terms/           # Terms of service page
+│   ├── privacy/
+│   │   └── page.tsx        # Privacy policy
+│   └── terms/
+│       └── page.tsx        # Terms of service
 ├── components/
-│   ├── layout/          # Navbar, Footer
-│   ├── sections/        # Landing page sections
+│   ├── layout/
+│   │   ├── navbar.tsx
+│   │   └── footer.tsx
+│   ├── sections/
 │   │   ├── hero-section.tsx
 │   │   ├── predeposit-section.tsx
 │   │   ├── how-it-works-section.tsx
 │   │   ├── stats-section.tsx
 │   │   ├── roadmap-section.tsx
 │   │   └── cta-section.tsx
-│   ├── ui/              # shadcn/ui components
+│   ├── ui/                 # shadcn/ui components
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── input.tsx
+│   │   ├── label.tsx
+│   │   ├── qr-code.tsx
+│   │   └── separator.tsx
 │   ├── theme-provider.tsx
 │   └── theme-toggle.tsx
 ├── lib/
-│   └── utils.ts         # Utilities
-└── config files (Next.js, Tailwind, TypeScript)
-\`\`\`
+│   └── utils.ts
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── package.json
+└── README.md
+```
 
 ## 🎨 Design System
 
