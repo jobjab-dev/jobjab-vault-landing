@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 22% 15%;
+    --foreground: 210 10% 85%;
+    --card: 210 25% 12%;
+    --card-foreground: 210 10% 85%;
+    --popover: 210 25% 12%;
+    --popover-foreground: 210 10% 85%;
+    --primary: 156 72% 67%;
+    --primary-foreground: 210 25% 8%;
+    --secondary: 210 25% 18%;
+    --secondary-foreground: 210 10% 75%;
+    --muted: 210 25% 18%;
+    --muted-foreground: 210 10% 55%;
+    --accent: 156 72% 67%;
+    --accent-foreground: 210 25% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 25% 25%;
+    --input: 210 25% 18%;
+    --ring: 156 72% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 22% 8%;
+    --foreground: 210 10% 90%;
+    --card: 210 25% 10%;
+    --card-foreground: 210 10% 90%;
+    --popover: 210 25% 10%;
+    --popover-foreground: 210 10% 90%;
+    --primary: 156 72% 67%;
+    --primary-foreground: 210 25% 8%;
+    --secondary: 210 25% 15%;
+    --secondary-foreground: 210 10% 80%;
+    --muted: 210 25% 15%;
+    --muted-foreground: 210 10% 60%;
+    --accent: 156 72% 67%;
+    --accent-foreground: 210 25% 8%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 25% 20%;
+    --input: 210 25% 15%;
+    --ring: 156 72% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for JVAULT */
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.dark .glass-effect {
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
